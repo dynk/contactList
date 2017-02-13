@@ -28,5 +28,4 @@
       android:id="@+id/txt_user_phone"
       android:textSize="20sp"
       android:gravity="center" />
-  
 </LinearLayout>
