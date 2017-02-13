@@ -91,22 +91,22 @@ namespace App.Resources.DataHelper
             }
         }
 
-        public bool selectQueryTablePerson(int Id)
+        public List<Person> selectQueryTablePerson(int Id)
         {
             try
             {
                 using (var connection = new SQLiteConnection(System.IO.Path.Combine(folder, "Person.db")))
                 {
 
-                    connection.Query<Person>("SELECT * FROM Person Where Id=?", Id);
-                    return true;
+                    return connection.Query<Person>("SELECT * FROM Person Where Id=?", Id);
+                    
                 }
 
             }
             catch (SQLiteException ex)
             {
                 Log.Info("errr", ex.Message);
-                return false;
+                return null;
             }
         }
 

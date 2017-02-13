@@ -44,6 +44,9 @@ namespace App
             mListView.ItemClick += (object sender, ItemClickEventArgs e) =>
             {
                 Toast.MakeText(this, "" + lstSource[e.Position].name, ToastLength.Short).Show();
+                var intent = new Intent(this, typeof(Details));
+                intent.PutExtra("id_user", lstSource[e.Position].Id);
+                StartActivity(intent);
             };
 
 

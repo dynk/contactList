@@ -6,6 +6,7 @@
     android:minWidth="25px"
     android:minHeight="25px"
     android:id="@+id/detailView">
+
   <ImageView
       android:layout_height="200dp"
       android:layout_width="match_parent"/>
@@ -27,4 +28,5 @@
       android:id="@+id/txt_user_phone"
       android:textSize="20sp"
       android:gravity="center" />
+  
 </LinearLayout>

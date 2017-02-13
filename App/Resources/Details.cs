@@ -24,6 +24,7 @@ namespace App.Resources
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
+
             db = new Database();
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.Details);
