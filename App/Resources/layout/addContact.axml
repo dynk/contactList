@@ -30,6 +30,5 @@
             android:layout_height="wrap_content"
             android:text="Adicione"
             android:layout_weight="1" />
-        
     </LinearLayout>
 </LinearLayout>
