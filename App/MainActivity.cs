@@ -15,12 +15,11 @@ namespace App
    
     public class MainActivity : Activity
     {
-        private List<string> mItems;
         private ListView mListView;
         private Button b;
-        ListView lstData;
-        List<Person> lstSource = new List<Person>();
-        Database db;
+        private ListView lstData;
+        private List<Person> lstSource = new List<Person>();
+        private Database db;
 
 
         protected override void OnCreate(Bundle bundle)
@@ -40,15 +39,15 @@ namespace App
             ListViewAdapter myAdapter = new ListViewAdapter(this, LoadData());
             mListView.Adapter = myAdapter;
 
+            lstSource = db.selectTablePerson();
+
             mListView.ItemClick += (object sender, ItemClickEventArgs e) =>
             {
-                int nameUser = (int) mListView.GetItemAtPosition(e.Position);
-                Toast.MakeText(this, "" + nameUser, ToastLength.Short).Show();
+                Toast.MakeText(this, "" + lstSource[e.Position].name, ToastLength.Short).Show();
             };
 
-            
 
-    }
+        }
 
         private List<Person> LoadData(){
                 lstSource = db.selectTablePerson();

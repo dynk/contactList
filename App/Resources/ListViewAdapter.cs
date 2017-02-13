@@ -11,9 +11,12 @@ using Android.Views;
 using Android.Widget;
 using App.Resources.model;
 using Java.Lang;
+using static Android.Widget.AdapterView;
 
 namespace App.Resources
 {
+
+
     public class ViewHolder : Java.Lang.Object{
         public TextView txtName { get; set; }
         public TextView txtEmail { get; set; }
@@ -21,7 +24,7 @@ namespace App.Resources
 
     public class ListViewAdapter : BaseAdapter
     {
-
+        public ListView minhaLista;
         private Activity activity;
         private List<Person> lstPerson;
 
@@ -31,7 +34,7 @@ namespace App.Resources
             this.lstPerson = lstPerson;
         }
 
-        public override int Count
+    public override int Count
         {
             get
             {
@@ -60,7 +63,6 @@ namespace App.Resources
             var txtEmail = view.FindViewById<TextView>(Resource.Id.txt_email);
                 txtEmail.Text = lstPerson[position].email;
 
-            
             return view;
 
         }

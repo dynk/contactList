@@ -202,9 +202,6 @@ namespace App
 			// aapt resource value: 0x7f05000b
 			public const int linearLayout1 = 2131034123;
 			
-			// aapt resource value: 0x7f050010
-			public const int listView = 2131034128;
-			
 			// aapt resource value: 0x7f050001
 			public const int mini = 2131034113;
 			
