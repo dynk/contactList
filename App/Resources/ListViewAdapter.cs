@@ -57,6 +57,9 @@ namespace App.Resources
             var txtName = view.FindViewById<TextView>(Resource.Id.txt_username);
                 txtName.Text = lstPerson[position].name;
 
+            var txtEmail = view.FindViewById<TextView>(Resource.Id.txt_email);
+                txtEmail.Text = lstPerson[position].email;
+
             return view;
 
         }
