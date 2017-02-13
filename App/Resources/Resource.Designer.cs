@@ -32,20 +32,14 @@ namespace App
 			global::com.refractored.fab.Resource.Attribute.fab_colorRipple = global::App.Resource.Attribute.fab_colorRipple;
 			global::com.refractored.fab.Resource.Attribute.fab_shadow = global::App.Resource.Attribute.fab_shadow;
 			global::com.refractored.fab.Resource.Attribute.fab_size = global::App.Resource.Attribute.fab_size;
-			global::com.refractored.fab.Resource.Attribute.layoutManager = global::App.Resource.Attribute.layoutManager;
-			global::com.refractored.fab.Resource.Attribute.reverseLayout = global::App.Resource.Attribute.reverseLayout;
-			global::com.refractored.fab.Resource.Attribute.spanCount = global::App.Resource.Attribute.spanCount;
-			global::com.refractored.fab.Resource.Attribute.stackFromEnd = global::App.Resource.Attribute.stackFromEnd;
 			global::com.refractored.fab.Resource.Color.fab_material_blue_500 = global::App.Resource.Color.fab_material_blue_500;
 			global::com.refractored.fab.Resource.Dimension.fab_elevation_lollipop = global::App.Resource.Dimension.fab_elevation_lollipop;
 			global::com.refractored.fab.Resource.Dimension.fab_scroll_threshold = global::App.Resource.Dimension.fab_scroll_threshold;
 			global::com.refractored.fab.Resource.Dimension.fab_shadow_size = global::App.Resource.Dimension.fab_shadow_size;
 			global::com.refractored.fab.Resource.Dimension.fab_size_mini = global::App.Resource.Dimension.fab_size_mini;
 			global::com.refractored.fab.Resource.Dimension.fab_size_normal = global::App.Resource.Dimension.fab_size_normal;
-			global::com.refractored.fab.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::App.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
 			global::com.refractored.fab.Resource.Drawable.fab_shadow = global::App.Resource.Drawable.fab_shadow;
 			global::com.refractored.fab.Resource.Drawable.fab_shadow_mini = global::App.Resource.Drawable.fab_shadow_mini;
-			global::com.refractored.fab.Resource.Id.item_touch_helper_previous_elevation = global::App.Resource.Id.item_touch_helper_previous_elevation;
 			global::com.refractored.fab.Resource.Id.mini = global::App.Resource.Id.mini;
 			global::com.refractored.fab.Resource.Id.normal = global::App.Resource.Id.normal;
 			global::com.refractored.fab.Resource.Styleable.FloatingActionButton = global::App.Resource.Styleable.FloatingActionButton;
@@ -55,46 +49,28 @@ namespace App
 			global::com.refractored.fab.Resource.Styleable.FloatingActionButton_fab_colorRipple = global::App.Resource.Styleable.FloatingActionButton_fab_colorRipple;
 			global::com.refractored.fab.Resource.Styleable.FloatingActionButton_fab_shadow = global::App.Resource.Styleable.FloatingActionButton_fab_shadow;
 			global::com.refractored.fab.Resource.Styleable.FloatingActionButton_fab_size = global::App.Resource.Styleable.FloatingActionButton_fab_size;
-			global::com.refractored.fab.Resource.Styleable.RecyclerView = global::App.Resource.Styleable.RecyclerView;
-			global::com.refractored.fab.Resource.Styleable.RecyclerView_android_orientation = global::App.Resource.Styleable.RecyclerView_android_orientation;
-			global::com.refractored.fab.Resource.Styleable.RecyclerView_layoutManager = global::App.Resource.Styleable.RecyclerView_layoutManager;
-			global::com.refractored.fab.Resource.Styleable.RecyclerView_reverseLayout = global::App.Resource.Styleable.RecyclerView_reverseLayout;
-			global::com.refractored.fab.Resource.Styleable.RecyclerView_spanCount = global::App.Resource.Styleable.RecyclerView_spanCount;
-			global::com.refractored.fab.Resource.Styleable.RecyclerView_stackFromEnd = global::App.Resource.Styleable.RecyclerView_stackFromEnd;
 		}
 		
 		public partial class Attribute
 		{
 			
-			// aapt resource value: 0x7f010006
-			public const int fab_colorDisabled = 2130771974;
-			
-			// aapt resource value: 0x7f010005
-			public const int fab_colorNormal = 2130771973;
-			
-			// aapt resource value: 0x7f010004
-			public const int fab_colorPressed = 2130771972;
-			
-			// aapt resource value: 0x7f010007
-			public const int fab_colorRipple = 2130771975;
-			
-			// aapt resource value: 0x7f010008
-			public const int fab_shadow = 2130771976;
-			
-			// aapt resource value: 0x7f010009
-			public const int fab_size = 2130771977;
-			
-			// aapt resource value: 0x7f010000
-			public const int layoutManager = 2130771968;
-			
 			// aapt resource value: 0x7f010002
-			public const int reverseLayout = 2130771970;
+			public const int fab_colorDisabled = 2130771970;
 			
 			// aapt resource value: 0x7f010001
-			public const int spanCount = 2130771969;
+			public const int fab_colorNormal = 2130771969;
+			
+			// aapt resource value: 0x7f010000
+			public const int fab_colorPressed = 2130771968;
 			
 			// aapt resource value: 0x7f010003
-			public const int stackFromEnd = 2130771971;
+			public const int fab_colorRipple = 2130771971;
+			
+			// aapt resource value: 0x7f010004
+			public const int fab_shadow = 2130771972;
+			
+			// aapt resource value: 0x7f010005
+			public const int fab_size = 2130771973;
 			
 			static Attribute()
 			{
@@ -109,8 +85,8 @@ namespace App
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f060000
-			public const int fab_material_blue_500 = 2131099648;
+			// aapt resource value: 0x7f040000
+			public const int fab_material_blue_500 = 2130968576;
 			
 			static Color()
 			{
@@ -125,23 +101,20 @@ namespace App
 		public partial class Dimension
 		{
 			
-			// aapt resource value: 0x7f040005
-			public const int fab_elevation_lollipop = 2130968581;
+			// aapt resource value: 0x7f050004
+			public const int fab_elevation_lollipop = 2131034116;
 			
-			// aapt resource value: 0x7f040004
-			public const int fab_scroll_threshold = 2130968580;
+			// aapt resource value: 0x7f050003
+			public const int fab_scroll_threshold = 2131034115;
 			
-			// aapt resource value: 0x7f040003
-			public const int fab_shadow_size = 2130968579;
+			// aapt resource value: 0x7f050002
+			public const int fab_shadow_size = 2131034114;
 			
-			// aapt resource value: 0x7f040002
-			public const int fab_size_mini = 2130968578;
+			// aapt resource value: 0x7f050001
+			public const int fab_size_mini = 2131034113;
 			
-			// aapt resource value: 0x7f040001
-			public const int fab_size_normal = 2130968577;
-			
-			// aapt resource value: 0x7f040000
-			public const int item_touch_helper_max_drag_scroll_per_frame = 2130968576;
+			// aapt resource value: 0x7f050000
+			public const int fab_size_normal = 2131034112;
 			
 			static Dimension()
 			{
@@ -178,53 +151,62 @@ namespace App
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050006
-			public const int btnAdd = 2131034118;
+			// aapt resource value: 0x7f070005
+			public const int btnAdd = 2131165189;
 			
-			// aapt resource value: 0x7f05000d
-			public const int button1 = 2131034125;
+			// aapt resource value: 0x7f070010
+			public const int button1 = 2131165200;
 			
-			// aapt resource value: 0x7f050005
-			public const int edtCellphone = 2131034117;
+			// aapt resource value: 0x7f070006
+			public const int detailView = 2131165190;
 			
-			// aapt resource value: 0x7f050004
-			public const int edtEmail = 2131034116;
+			// aapt resource value: 0x7f070004
+			public const int edtCellphone = 2131165188;
 			
-			// aapt resource value: 0x7f050003
-			public const int edtName = 2131034115;
+			// aapt resource value: 0x7f070003
+			public const int edtEmail = 2131165187;
 			
-			// aapt resource value: 0x7f050008
-			public const int img_user = 2131034120;
+			// aapt resource value: 0x7f070002
+			public const int edtName = 2131165186;
 			
-			// aapt resource value: 0x7f050000
-			public const int item_touch_helper_previous_elevation = 2131034112;
+			// aapt resource value: 0x7f07000b
+			public const int img_user = 2131165195;
 			
-			// aapt resource value: 0x7f05000b
-			public const int linearLayout1 = 2131034123;
+			// aapt resource value: 0x7f07000e
+			public const int linearLayout1 = 2131165198;
 			
-			// aapt resource value: 0x7f050001
-			public const int mini = 2131034113;
+			// aapt resource value: 0x7f070000
+			public const int mini = 2131165184;
 			
-			// aapt resource value: 0x7f05000f
-			public const int myListView = 2131034127;
+			// aapt resource value: 0x7f070012
+			public const int myListView = 2131165202;
 			
-			// aapt resource value: 0x7f050007
-			public const int myListViewAdapter = 2131034119;
+			// aapt resource value: 0x7f07000a
+			public const int myListViewAdapter = 2131165194;
 			
-			// aapt resource value: 0x7f050002
-			public const int normal = 2131034114;
+			// aapt resource value: 0x7f070001
+			public const int normal = 2131165185;
 			
-			// aapt resource value: 0x7f05000c
-			public const int searchView1 = 2131034124;
+			// aapt resource value: 0x7f07000f
+			public const int searchView1 = 2131165199;
 			
-			// aapt resource value: 0x7f05000e
-			public const int textView1 = 2131034126;
+			// aapt resource value: 0x7f070011
+			public const int textView1 = 2131165201;
 			
-			// aapt resource value: 0x7f05000a
-			public const int txt_email = 2131034122;
+			// aapt resource value: 0x7f07000d
+			public const int txt_email = 2131165197;
 			
-			// aapt resource value: 0x7f050009
-			public const int txt_username = 2131034121;
+			// aapt resource value: 0x7f070008
+			public const int txt_user_email = 2131165192;
+			
+			// aapt resource value: 0x7f070007
+			public const int txt_user_name = 2131165191;
+			
+			// aapt resource value: 0x7f070009
+			public const int txt_user_phone = 2131165193;
+			
+			// aapt resource value: 0x7f07000c
+			public const int txt_username = 2131165196;
 			
 			static Id()
 			{
@@ -243,10 +225,13 @@ namespace App
 			public const int addContact = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int ListViewAdapter = 2130903041;
+			public const int Details = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int Main = 2130903042;
+			public const int ListViewAdapter = 2130903042;
+			
+			// aapt resource value: 0x7f030003
+			public const int Main = 2130903043;
 			
 			static Layout()
 			{
@@ -261,11 +246,11 @@ namespace App
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f070001
-			public const int ApplicationName = 2131165185;
+			// aapt resource value: 0x7f060001
+			public const int ApplicationName = 2131099649;
 			
-			// aapt resource value: 0x7f070000
-			public const int Hello = 2131165184;
+			// aapt resource value: 0x7f060000
+			public const int Hello = 2131099648;
 			
 			static String()
 			{
@@ -281,12 +266,12 @@ namespace App
 		{
 			
 			public static int[] FloatingActionButton = new int[] {
+					2130771968,
+					2130771969,
+					2130771970,
+					2130771971,
 					2130771972,
-					2130771973,
-					2130771974,
-					2130771975,
-					2130771976,
-					2130771977};
+					2130771973};
 			
 			// aapt resource value: 2
 			public const int FloatingActionButton_fab_colorDisabled = 2;
@@ -305,28 +290,6 @@ namespace App
 			
 			// aapt resource value: 5
 			public const int FloatingActionButton_fab_size = 5;
-			
-			public static int[] RecyclerView = new int[] {
-					16842948,
-					2130771968,
-					2130771969,
-					2130771970,
-					2130771971};
-			
-			// aapt resource value: 0
-			public const int RecyclerView_android_orientation = 0;
-			
-			// aapt resource value: 1
-			public const int RecyclerView_layoutManager = 1;
-			
-			// aapt resource value: 3
-			public const int RecyclerView_reverseLayout = 3;
-			
-			// aapt resource value: 2
-			public const int RecyclerView_spanCount = 2;
-			
-			// aapt resource value: 4
-			public const int RecyclerView_stackFromEnd = 4;
 			
 			static Styleable()
 			{
