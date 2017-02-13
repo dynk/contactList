@@ -34,17 +34,21 @@ namespace App
 
             btnAdd.Click += delegate
             {
+
                 Person person = new Person()
                 {
                     name = edtName.Text,
                     email = edtEmail.Text,
                     celphone = int.Parse(edtCellphone.Text)
                 };
-                    if (db.InsertIntoTablePerson(person)) {
-                        Toast.MakeText(this, "Contato : " + person.name + " Cadastrado com Sucesso !!", ToastLength.Long).Show();
-                        var intent = new Intent(this, typeof(MainActivity));
-                        StartActivity(intent);
-                }; 
+             
+                if (db.InsertIntoTablePerson(person))
+                {
+                    Toast.MakeText(this, "Contato : " + person.name + " Cadastrado com Sucesso !! ", ToastLength.Long).Show();
+                    var intent = new Intent(this, typeof(MainActivity));
+                    StartActivity(intent);
+                };
+
             };
         }
     }
