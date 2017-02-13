@@ -7,6 +7,7 @@ using Android.Views;
 using App.Resources.model;
 using App.Resources.DataHelper;
 using App.Resources;
+using static Android.Widget.AdapterView;
 
 namespace App
 {
@@ -38,21 +39,14 @@ namespace App
 
             ListViewAdapter myAdapter = new ListViewAdapter(this, LoadData());
             mListView.Adapter = myAdapter;
-         
 
-            //lstData.ItemClick += (s, e) => {
-            //    for (int i = 0; i < lstData.Count; i++)
-            //    {
-            //        if(e.Position == i)
-            //        {
-            //            // vai pra pagina de edicao
-            //        }
-            //    }
+            mListView.ItemClick += (object sender, ItemClickEventArgs e) =>
+            {
+                int nameUser = (int) mListView.GetItemAtPosition(e.Position);
+                Toast.MakeText(this, "" + nameUser, ToastLength.Short).Show();
+            };
 
-        //};
-
-        //LoadData();
-
+            
 
     }
 

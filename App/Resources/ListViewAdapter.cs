@@ -60,8 +60,12 @@ namespace App.Resources
             var txtEmail = view.FindViewById<TextView>(Resource.Id.txt_email);
                 txtEmail.Text = lstPerson[position].email;
 
+            
             return view;
 
         }
+
+        
+
     }
 }

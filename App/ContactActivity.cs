@@ -40,7 +40,11 @@ namespace App
                     email = edtEmail.Text,
                     celphone = int.Parse(edtCellphone.Text)
                 };
-                db.InsertIntoTablePerson(person); 
+                    if (db.InsertIntoTablePerson(person)) {
+                        Toast.MakeText(this, "Contato : " + person.name + " Cadastrado com Sucesso !!", ToastLength.Long).Show();
+                        var intent = new Intent(this, typeof(MainActivity));
+                        StartActivity(intent);
+                }; 
             };
         }
     }
