@@ -18,18 +18,18 @@ namespace App.Resources
         public TextView txtName { get; set; }
         public TextView txtEmail { get; set; }
     }
+
     public class ListViewAdapter : BaseAdapter
     {
 
         private Activity activity;
         private List<Person> lstPerson;
+
         public ListViewAdapter(Activity activity, List<Person> lstPerson)
         {
             this.activity = activity;
             this.lstPerson = lstPerson;
         }
-
-     
 
         public override int Count
         {
@@ -39,7 +39,7 @@ namespace App.Resources
             }
 
         }
-
+    
         public override Java.Lang.Object GetItem(int position)
         {
             return null;
@@ -52,10 +52,10 @@ namespace App.Resources
 
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
-            var view = convertView ?? activity.LayoutInflater.Inflate(Resource.Layout.Main, parent, false);
+            var view = convertView ?? activity.LayoutInflater.Inflate(Resource.Layout.ListViewAdapter, parent, false);
 
-            var txtName = view.FindViewById<TextView>(Resource.Id.textView1);
-            txtName.Text = lstPerson[position].name;
+            var txtName = view.FindViewById<TextView>(Resource.Id.txt_username);
+                txtName.Text = lstPerson[position].name;
 
             return view;
 

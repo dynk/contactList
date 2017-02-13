@@ -31,20 +31,13 @@ namespace App
 
             db = new Database();
             db.createDataBase();
-
-            Person person = new Person();
-                person.name = "Lucas Oliveira";
-                person.email = "lucas.o.isa@hotmail.com";
-                person.celphone = 10101010;
-            db.InsertIntoTablePerson(person);
-
             mListView = FindViewById<ListView>(Resource.Id.myListView);
 
             b = FindViewById<Button>(Resource.Id.button1);
             b.Click += delegate { callPage(); };
-            
-            ArrayAdapter<Person> adapter = new ArrayAdapter<Person>(this, Android.Resource.Layout.SimpleListItem1, LoadData());
-            mListView.Adapter = adapter;
+
+            ListViewAdapter myAdapter = new ListViewAdapter(this, LoadData());
+            mListView.Adapter = myAdapter;
          
 
             //lstData.ItemClick += (s, e) => {
