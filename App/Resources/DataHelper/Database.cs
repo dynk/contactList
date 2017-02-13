@@ -61,7 +61,7 @@ namespace App.Resources.DataHelper
                 using (var connection = new SQLiteConnection(System.IO.Path.Combine(folder, "Person.db")))
                 {
 
-                    return connection.Table<Person>().ToList();
+                    return connection.Query<Person>("SELECT * FROM Person ORDER BY NAME DESC");
                     
                 }
             }
